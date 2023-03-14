@@ -216,7 +216,7 @@ body {
     user-select: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
-  .container input {
+  .container-check input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -231,7 +231,7 @@ body {
     border-radius: 50%;
   }
 
-  .container input:checked ~ .checkmark {
+  .container-check input:checked ~ .checkmark {
     background-color: #151515;
   }
   .checkmark:after {
@@ -239,10 +239,10 @@ body {
     position: absolute;
     display: none;
   }
-  .container input:checked ~ .checkmark:after {
+  .container-check input:checked ~ .checkmark:after {
     display: block;
   }
-  .container .checkmark:after {
+  .container-check .checkmark:after {
       top: 9px;
       left: 9px;
       width: 8px;
