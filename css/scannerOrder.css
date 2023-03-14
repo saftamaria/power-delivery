@@ -6,6 +6,7 @@
   
   body {
     font-family: "Poppins", sans-serif;
+    background-color: rgb(162, 162, 162);
   }
   
   .container {
@@ -150,6 +151,8 @@
   .icon-container{
     position: relative;
     display: table;
+    background-color: white;
+    
   }
   .scan,
   .orders{
@@ -157,8 +160,13 @@
     position: relative;
     padding: 50px;
     font-size: 30px;
-    margin: 0 auto;
     color: gray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  .fa-qrcode,
+  .fa-list{
+    margin: 25%;
+    font-size: 40px;
   }
 
   .scan:hover{
@@ -169,20 +177,69 @@
   .orders:hover{
     color: blue;
     text-decoration: underline;
-    transition: 0.3ms;
+    transition: 0.85s;
   }
 
   .innerInfo{
     position: relative;
-    margin: 10%;
+    background-color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  
   }
   .innerInfo h2{
-    font-size: 30px;
+    font-size: 35px;
     padding: 10px;
     color:rgb(68, 68, 68);
+    margin-left:20px;
   }
   .innerInfo p{
     font-size: 25px;
     padding: 10px;
     color:rgb(130, 130, 130);
+    margin-left:20px;
+  }
+
+  .buttonWrapper{
+    display: table-cell;
+    position: relative;
+    padding: 20px;
+    
+  }
+  
+  .btnOne,
+  .btnTwo,
+  .btnThree{
+    display: block;
+    margin: 30px auto;
+    width: 70%;
+    
+  }
+  .btnOne{
+    padding: 10px 22px;
+    border-radius: 5px;  
+    border: #fff;
+    margin-top:5em;
+    font-size: 20px;
+  }
+  .btnTwo{
+    padding: 10px 22px;
+    border-radius: 5px;  
+    background-color: rgb(54, 159, 75);
+    border-color:  rgb(54, 159, 75);
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .buttonWrapper p {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+  .btnThree{
+    padding: 10px 22px;
+    border-radius: 5px;  
+    border: #fff;
+    margin-top:2em;
+    color:rgb(201, 6, 6);
+    font-size:20px;
   }
