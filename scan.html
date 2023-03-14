@@ -7,13 +7,11 @@
     <title>Scanning</title>
     <link rel="stylesheet" href="/css/scanning.css">
     <link rel="stylesheet" href="/css/clearfix.css">
-    <link rel="stylesheet" href="/css/custom.css">
-    <link rel="stylesheet" href="/css/fontawesome.css">
     <link rel="stylesheet" href="/css/reset.css">
 </head>
 <body>
-    
-    <nav>
+<!--START NAV-->
+     <nav>
         <div class="navbar">
           <div class="container nav-container">
               <input class="checkbox" type="checkbox" name="" id="" />
@@ -33,14 +31,27 @@
           </div>
         </div>
       </nav>
-
-      <div class="container">
+<!--START NAV-->
+<!--START SCAN SECTION-->
+      <div class="icon-container">
         <div class="scan">
-
-          <p style="color:blue">SCAN</p>
+          <i class="fa-solid fa-qrcode"></i>
+          <p class="scanPointer">SCAN</p>
         </div>
-        <div class="orders"></div>
+        <div class="orders">
+          <i class="fa-solid fa-list"></i>
+          <p class="ordersPointer">ORDERS</p>
+        </div>
       </div>
-    
+<!--END SCAN SECTION-->
+<!--START QR CONTAINER-->
+      <div class="boxWrapper">
+        <p>Scan the QR code frorm the packedge</p>
+        <div class="QR">Black</div>
+        <p>Scanning...</p>
+      </div>
+<!--END QR CONTAINER-->
+
+      <script src="https://kit.fontawesome.com/c8f50e1771.js" crossorigin="anonymous"></script>
 </body>
 </html>

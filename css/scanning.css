@@ -6,12 +6,12 @@
   
   body {
     font-family: "Poppins", sans-serif;
+    background-color: grey;
   }
   
   .container {
-    max-width: 1050px;
+    max-width: 1024px;
     width: 90%;
-    margin: auto;
   }
   
   .navbar {
@@ -121,10 +121,10 @@
   }
   
   .logo {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 1.2rem;
+    position: relative;
+    top: 15px;
+    margin-left: 3.5em;
+    font-size: 1.5rem;
     color: #ffffff;
   }
   
@@ -147,5 +147,57 @@
   .nav-container input[type="checkbox"]:checked ~ .logo{
     display: none;
   }
+
+  .icon-container{
+    display: table;
+    margin: 15px auto;
+    background-color: #fff;
+    
+  }
+
+  .scan,
+  .orders{
+    display: table-cell;
+    position: relative;
+    padding: 40px;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+
+  .scan:hover{
+    color: blue;
+    text-decoration: underline;
+    transition: 1s;
+  }
+  .orders:hover{
+    color: blue;
+    text-decoration: underline;
+    transition: 0.3ms;
+  }
+  
+  .boxWrapper{
+    display: block;
+    margin: 0 auto;
+  }
+  .boxWrapper > p{
+    text-align: center;
+  }
+  .QR{
+    display: inline-block;
+    background-color: #000;
+    height: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+  }
+
+  
+
+  
+  
+ 
+ 
+ 
 
   
