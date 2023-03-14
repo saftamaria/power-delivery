@@ -147,7 +147,10 @@
     display: none;
   }
 
-  
+  .icon-container{
+    position: relative;
+    display: table;
+  }
   .scan,
   .orders{
     display: table-cell;
@@ -167,4 +170,19 @@
     color: blue;
     text-decoration: underline;
     transition: 0.3ms;
+  }
+
+  .innerInfo{
+    position: relative;
+    margin: 10%;
+  }
+  .innerInfo h2{
+    font-size: 30px;
+    padding: 10px;
+    color:rgb(68, 68, 68);
+  }
+  .innerInfo p{
+    font-size: 25px;
+    padding: 10px;
+    color:rgb(130, 130, 130);
   }
