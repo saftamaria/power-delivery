@@ -6,7 +6,6 @@
   
   body {
     font-family: "Poppins", sans-serif;
-    background-color: grey;
   }
   
   .container {
@@ -148,13 +147,7 @@
     display: none;
   }
 
-  .icon-container{
-    display: table;
-    margin: 15px auto;
-    background-color: #fff;
-  }
-
-
+  
   .scan,
   .orders{
     display: table-cell;
@@ -175,30 +168,3 @@
     text-decoration: underline;
     transition: 0.3ms;
   }
-  
-  .boxWrapper{
-    display: block;
-    margin: 0 auto;
-  }
-  .boxWrapper > p{
-    text-align: center;
-  }
-  .QR{
-    display: inline-block;
-    background-color: #000;
-    height: 20em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-  }
-
-  
-
-
-  
- 
- 
- 
-
-  
