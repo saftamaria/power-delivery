@@ -148,40 +148,65 @@
     display: none;
   }
 
+
   .icon-container{
     display: table;
-    margin: 15px auto;
     background-color: #fff;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
   }
-
 
   .scan,
   .orders{
     display: table-cell;
     position: relative;
-    padding: 50px;
+    text-align: center;
+    padding: 30px;
     font-size: 30px;
     margin: 0 auto;
     color: gray;
   }
-
-  .scan:hover{
-    color: blue;
-    text-decoration: underline;
-    transition: 0.85s;
-  }
-  .orders:hover{
-    color: blue;
-    text-decoration: underline;
-    transition: 0.3ms;
-  }
   
+  
+  .scanPointer a:hover, a::after{
+    color: #000;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    height: 5px;
+    width: calc(100% - 50px);
+    content: "";
+    background: #0f0f0f;
+    opacity: 0;
+    transition: opacity 300ms linear, transform 300ms ease;
+   
+  }
+  .ordersPointer a:hover, a::after{
+    color: #000;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    height: 5px;
+    width: calc(100% - 50px);
+    content: "";
+    background: #0f0f0f;
+    opacity: 0;
+    transition: opacity 300ms linear, transform 300ms ease;
+  }
+
+
   .boxWrapper{
     display: block;
     margin: 0 auto;
   }
   .boxWrapper > p{
     text-align: center;
+    margin: 22px auto;
   }
   .QR{
     display: inline-block;
